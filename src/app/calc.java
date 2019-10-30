@@ -84,18 +84,13 @@ public class calc {
     public static double tan(input inp)
     {
         double result = (double) Math.tan(inp.getNum1());
-
+        return result;
+    }
     public static int pow(input inp)
     {
         int result = (int) Math.pow(inp.getNum1(), inp.getNum2());
-
-    public static double cosine(input inp)
-    {
-        double result =  Math.cos(inp.getNum1());
-
-    public static double cosine(input inp)
-    {
-        double result =  Math.cos(inp.getNum1());
+        return result;
+    }
 
     public static double cosine(input inp)
     {
