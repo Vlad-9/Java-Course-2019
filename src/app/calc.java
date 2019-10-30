@@ -2,11 +2,15 @@ package app;
 import java.util.Scanner;
 
 public class calc {
+<<<<<<< .merge_file_a14428
 <<<<<<< HEAD
    
 =======
  
 >>>>>>> features/feature1
+=======
+
+>>>>>>> .merge_file_a14876
 
     public static double calculate(input inp)
     {
@@ -25,6 +29,9 @@ public class calc {
             break;      
         case '*':
         ans = mult( inp);
+            break;
+        case 'c':
+        ans = cosine( inp);
             break;
         case '/':
         ans = div( inp);
@@ -78,6 +85,7 @@ public class calc {
         double result = inp.getNum1()%inp.getNum2();
         return result;
     }
+<<<<<<< .merge_file_a14428
 <<<<<<< HEAD
     public static double tan(input inp)
     {
@@ -87,6 +95,11 @@ public class calc {
     {
         int result = (int) Math.pow(inp.getNum1(), inp.getNum2());
 >>>>>>> features/feature1
+=======
+    public static double cosine(input inp)
+    {
+        double result =  Math.cos(inp.getNum1());
+>>>>>>> .merge_file_a14876
         return result;
     }
     }
