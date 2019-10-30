@@ -2,7 +2,11 @@ package app;
 import java.util.Scanner;
 
 public class calc {
+<<<<<<< HEAD
    
+=======
+ 
+>>>>>>> features/feature1
 
     public static double calculate(input inp)
     {
@@ -25,10 +29,16 @@ public class calc {
         case '/':
         ans = div( inp);
             break;
+<<<<<<< HEAD
 
             case 't':
             ans = tan( inp);
                 break;
+=======
+            case '^':
+        ans = pow( inp);
+            break;
+>>>>>>> features/feature1
         case '%':
         ans = mod( inp);
             break;
@@ -68,9 +78,15 @@ public class calc {
         double result = inp.getNum1()%inp.getNum2();
         return result;
     }
+<<<<<<< HEAD
     public static double tan(input inp)
     {
         double result = (double) Math.tan(inp.getNum1());
+=======
+    public static int pow(input inp)
+    {
+        int result = (int) Math.pow(inp.getNum1(), inp.getNum2());
+>>>>>>> features/feature1
         return result;
     }
     }
