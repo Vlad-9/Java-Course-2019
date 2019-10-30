@@ -2,6 +2,7 @@ package app;
 import java.util.Scanner;
 
 public class calc {
+<<<<<<< .merge_file_a10432
 <<<<<<< .merge_file_a14428
 <<<<<<< HEAD
    
@@ -11,6 +12,9 @@ public class calc {
 =======
 
 >>>>>>> .merge_file_a14876
+=======
+
+>>>>>>> .merge_file_a00980
 
     public static double calculate(input inp)
     {
@@ -85,6 +89,7 @@ public class calc {
         double result = inp.getNum1()%inp.getNum2();
         return result;
     }
+<<<<<<< .merge_file_a10432
 <<<<<<< .merge_file_a14428
 <<<<<<< HEAD
     public static double tan(input inp)
@@ -100,6 +105,11 @@ public class calc {
     {
         double result =  Math.cos(inp.getNum1());
 >>>>>>> .merge_file_a14876
+=======
+    public static double cosine(input inp)
+    {
+        double result =  Math.cos(inp.getNum1());
+>>>>>>> .merge_file_a00980
         return result;
     }
     }
