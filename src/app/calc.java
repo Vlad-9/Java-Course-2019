@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class calc {
 
-
     public static double calculate(input inp)
     {
         
@@ -15,6 +14,9 @@ public class calc {
         switch (choose){
         case '+':
             ans = add( inp);
+            break;
+            case 'l':
+            ans = log( inp);
             break;
         case '-':
         ans = sub( inp);
@@ -78,6 +80,7 @@ public class calc {
         return result;
     }
 
+
     public static double tan(input inp)
     {
         double result = (double) Math.tan(inp.getNum1());
@@ -100,5 +103,12 @@ public class calc {
 
         return result;
     }
+
+    public static double log(input inp)
+    {
+        double result =  Math.log(inp.getNum1());
+        return result;
+    }
+
     }
 
