@@ -2,43 +2,7 @@ package app;
 import java.util.Scanner;
 
 public class calc {
-   /* public static void calculate()
-    {
-        System.out.println("Enter first and second number:");
-        Scanner inp= new Scanner(System.in);
-        int num1,num2;
-        num1 = inp.nextInt();
-        num2 = inp.nextInt();
-       //input inp = new input();
-       //inp = inp.setInput();
-       
-       
-        char choose ;
-        operator op1 = new operator();
-        choose = op1.getOperator();
- 
-        switch (choose){
-        case '+':
-            System.out.println(add( num1,num2));
-            break;
-        case '-':
-            System.out.println(sub( num1,num2));
-            break;      
-        case '*':
-            System.out.println(mult( num1,num2));
-            break;
-        case '/':
-            System.out.println(div( num1,num2));
-            break;
-        case '%':
-            System.out.println(mod( num1,num2));
-            break;
-            default:
-                System.out.println("Wrong Operation");
 
-        }
-     
-    }*/
 
     public static double calculate(input inp)
     {
@@ -57,6 +21,9 @@ public class calc {
             break;      
         case '*':
         ans = mult( inp);
+            break;
+        case 'c':
+        ans = cosine( inp);
             break;
         case '/':
         ans = div( inp);
@@ -100,7 +67,10 @@ public class calc {
         double result = inp.getNum1()%inp.getNum2();
         return result;
     }
-   
+    public static double cosine(input inp)
+    {
+        double result =  Math.cos(inp.getNum1());
+        return result;
+    }
     }
 
-gi
